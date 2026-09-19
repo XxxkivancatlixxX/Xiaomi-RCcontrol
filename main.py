@@ -6,9 +6,8 @@ kumanda_cons = InputDevice("/dev/input/event19")
 
 aparat = [kumanda_key, kumanda_cons]
 
-ui = UInput({ecodes.EV_KEY: 
-             [ecodes.KEY_ENTER]
-             })
+ui = UInput({ecodes.EV_KEY: [ecodes.KEY_ENTER]})
+ui1 = UInput({ecodes.EV_KEY: [ecodes.KEY_TAB]})
 
 while True:
     ready, _, _ = select.select(aparat, [], [])
@@ -57,3 +56,4 @@ while True:
 
                 elif event.code == ecodes.KEY_VOICECOMMAND:
                     print("voice")
+                    ui1.write(ecodes.EV_KEY, ecodes.KEY_TAB, event.value)
