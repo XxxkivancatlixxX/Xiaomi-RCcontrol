@@ -1,9 +1,9 @@
-#Prerequisities#
+# Prerequisities#
 ```sh
 sudo apt install python3-dev python3-pip libevdev-dev
 python3 pip install evdev
 ```
-###How to use?###
+### How to use?###
 
 To use, just run the code via python 3 like this:
 
@@ -11,7 +11,7 @@ To use, just run the code via python 3 like this:
 cd Xiaomi-RCcontrol/
 python3 main.py
 ```
-##Warning##
+## Warning##
 The device path is configured to my needs, so you would need to change it to your specific path, run the command below
 
 ```sh

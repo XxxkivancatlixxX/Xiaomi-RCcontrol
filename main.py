@@ -57,3 +57,4 @@ while True:
                 elif event.code == ecodes.KEY_VOICECOMMAND:
                     print("voice")
                     ui1.write(ecodes.EV_KEY, ecodes.KEY_TAB, event.value)
+                    ui1.syn()
